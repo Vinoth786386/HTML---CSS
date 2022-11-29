@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CKT</title>
+        <style>
+            .body{
+                margin: 0;
+            }
+            .header-section{
+                display: flex;
+                flex-direction: row;
+    background-color: #0f88aad0;
+    top:0;
+left: 0;
+right: 0;
+height: 55px;
+position: fixed;
+}
+.left-section{
+    display: flex;
+    margin-left: 20px;   
+}
+.picture{
+    height: 40px;
+    margin-top: 10px;
+
+}
+.right-section{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    margin-top: 7px;
+    margin-right: 50px;
+}
+.login{ 
+ font-size: medium;
+ font-family: Roboto, Arial;
+ position: absolute;
+border-radius: 2px;
+border-width: 2px;
+color: black;
+border-style:solid;
+background-color: white;
+border-color: white;
+right: 100px;
+cursor: pointer;
+transition: box-shadow 0.15s;
+}
+.login:hover{
+    opacity: 0.8;
+    color: gray;
+}
+.login:active{
+    opacity: 0.3;
+    color: gray;
+}
+.sign-up{
+font-size: medium;
+font-family: Roboto, Arial;
+color: black;
+position: absolute;
+right: 20px;
+border-width: 2px;
+background-color: white;
+border-radius: 2px;
+border-style:solid;
+border-color: ghostwhite;
+cursor: pointer;
+transition: box-shadow 0.15s;
+}
+.sign-up:hover{
+    opacity: 0.8;
+    color: grey;
+}
+.sign-up:active{
+    opacity: 0.2;
+    color: grey;
+}
+.box{
+    margin-top: 250px;
+    border: 2px;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-style: inset;
+    background: white;
+    transform: translate(-50%,-50%);
+    }
+    .alignment{
+display: grid;
+grid-template-rows: 1fr;
+    }
+    .email-id{
+        margin-top: 7px;
+        border-radius: 2px;
+        border-color: rgb(245, 245, 245);
+        
+    }
+    .password-id{
+        margin-top: 6px;
+        border-radius: 2px;
+        border-color: rgb(245, 245, 245);
+    }
+    .ln{
+        margin-left: 200px;
+    }
+    .lc{
+        margin-left: 150px;
+    }
+    .lg{
+        margin-top: 10px;
+        font-size: small;
+        border-radius: 2px;
+        border-color: blue;
+        color: white;
+        border-style: solid;
+        background-color: blue;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    .New-user{
+        color: black;
+        font-style: italic;
+    }
+         </style>
+    </head>
+        <body>
+            <div class="header-section">
+                <div class="left-section">
+                    <img class="picture" src="Intro-to-html/logo1.png">
+                </div>
+                <div class="right-section">
+                <button class="login">Login</button>
+                <button class="sign-up">Sign up</button>
+            </div>
+            <div class="box">
+                            <div class="text-center">
+                                <h1 class="ln">Login</h1>
+                                <h4 class="lc">Enter Your Login Credentials</h4>
+                                <div class="alignment">
+                                    <label>Email Address</label> 
+                                    <input class="email-id" placeholder="" name="username" required>  
+                                    <label>Password</label>   
+                                    <input class="password-id" placeholder="" name="password" required>  
+                                 </div>
+                               <button class="lg">Login</button>  
+                            <div class="New-user">
+                                <a href="https://youtube.com/" target="_blank">New User?Click to Register</a>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div> 
+        </body>
+</html>
